@@ -1,0 +1,160 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #131921;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    margin-right: 100px;
+}
+
+#nav {
+    display: flex;
+    gap: 20px;
+}
+
+#nav a {
+    text-decoration: none;
+    color: white;
+    margin-right: 20px;
+}
+
+#nav a:hover {
+    background-color: #0d141c; /* Background color on hover */
+    padding: 10px; /* Adjusted padding for square box effect */
+    border: 1px solid white; /* White border */
+    border-radius: 4px; /* Rounded corners */
+    color: white; /* Text color on hover */
+}
+
+#search {
+    flex-grow: 1;
+    margin: 0 20px;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+#search-btn {
+    background-color: #febd69;
+    color: #111;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.secondary-nav {
+    background-color: #222f3d;
+    padding: 10px 20px;
+    display: flex;
+    gap: 35px;
+    align-items: center;
+}
+
+.secondary-nav .nav-category {
+    display: inline-block;
+    margin-right: 20px; /* Adjusted to reduce space between items */
+}
+
+.secondary-nav .nav-category a {
+    text-decoration: none;
+    color: white;
+}
+
+.secondary-nav .nav-category:hover {
+    background-color: #222f3d; /* Background color on hover */
+    padding: 5px; /* Adjusted padding for square box effect */
+    border: 1px solid white;
+    border-radius: 4px; /* Rounded corners */
+    color: white; /* Text color on hover */
+}
+
+.container {
+    display: flex;
+}
+
+.filters {
+    
+    justify-content: space-around;
+    padding: 10px;
+    background-color: white;
+    border-bottom: 1px solid #ccc;
+	margin-left:20px;
+    margin-right:50px;
+}
+
+.filter-category,
+.filter-price,
+.filter-rating {
+    margin-right: 20px;
+}
+
+/* Style for unvisited links in .filter-category */
+.filter-category a:link {
+    color: blue;
+    text-decoration: none; /* Remove underline */
+}
+
+/* Style for visited links in .filter-category */
+.filter-category a:visited {
+    color: blue;
+}
+
+/* Style for links on mouse over in .filter-category */
+.filter-category a:hover {
+    color: red;
+}
+.filter-category p {
+    font-weight: bold;
+}
+.photo-table {
+            display: table;
+            width: 90%;
+        }
+
+        /* Style for each row in the table */
+        .photo-row {
+            display: table-row;
+        }
+
+        /* Style for each cell in the table */
+        .photo-cell {
+            display: table-cell;
+            vertical-align: top;
+            padding: 10px;
+            text-align: center;
+            border: 1px solid #ccc;
+            position: relative; /* Add position relative for absolute positioning */
+        }
+
+      
+        
+
+        .discount-label {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: red;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 8px;
+        }
+.photo-cell p a {
+            color: red; /* Link color for Best Deal */
+            text-decoration: none; /* Underline for the link */
+        }
